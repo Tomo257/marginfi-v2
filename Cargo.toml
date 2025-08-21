@@ -57,6 +57,10 @@ overflow-checks = false
 lto = "off"
 codegen-units = 8
 
+[patch.crates-io]
+bytemuck_derive = "1.9.3"
+
+
 ## Build options for release (build-program-verifiable should use these through env settings)
 # [profile.release]
 # overflow-checks = true
