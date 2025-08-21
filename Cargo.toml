@@ -41,7 +41,7 @@ transfer_hook = { path = "programs/test_transfer_hook", package = "test_transfer
 pyth-solana-receiver-sdk = { git = "https://github.com/Tomo257/pyth-crosschain", package = "pyth-solana-receiver-sdk", branch = "main" }
 # pyth-solana-receiver-sdk = "0.6.1"
 # pythnet-sdk = "2.3.1"
-switchboard-on-demand = "0.1.15"
+switchboard-on-demand = "0.2.0"
 
 borsh = "1.5.7"
 bytemuck = "1.23.1"
