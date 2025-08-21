@@ -43,7 +43,7 @@ pyth-solana-receiver-sdk = "0.6.1"
 switchboard-on-demand = "0.3.5"
 
 borsh = "1.5.7"
-bytemuck = "1.23.1"
+bytemuck = "1.8.1"
 bs58 = "0.5.1"
 # Note: 1.29.0 and later require Rust 1.83+ which solana does not ship with (yet)
 fixed = "=1.28.0"
