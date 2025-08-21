@@ -38,7 +38,8 @@ fixtures = { path = "test-utils", package = "test-utilities" }
 marginfi = { path = "programs/marginfi", package = "marginfi" }
 transfer_hook = { path = "programs/test_transfer_hook", package = "test_transfer_hook" }
 
-pyth-solana-receiver-sdk = "0.6.1"
+pyth-solana-receiver-sdk = { git = "https://github.com/Tomo257/pyth-crosschain", package = "pyth-solana-receiver-sdk", branch = "main" }
+# pyth-solana-receiver-sdk = "0.6.1"
 # pythnet-sdk = "2.3.1"
 switchboard-on-demand = "0.3.5"
 
