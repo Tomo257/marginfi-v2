@@ -43,7 +43,7 @@ pyth-solana-receiver-sdk = { git = "https://github.com/Tomo257/pyth-crosschain",
 # pythnet-sdk = "2.3.1"
 switchboard-on-demand = "0.4.9"
 
-borsh = "0.10.3"
+borsh = "1.5.7"
 bytemuck = "1.23.1"
 bs58 = "0.5.1"
 # Note: 1.29.0 and later require Rust 1.83+ which solana does not ship with (yet)
