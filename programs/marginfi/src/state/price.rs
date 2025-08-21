@@ -579,7 +579,7 @@ pub fn parse_swb_ignore_alignment(data: Ref<&mut [u8]>) -> MarginfiResult<PullFe
         return err!(MarginfiError::SwitchboardInvalidAccount);
     }
 
-    if data[..8] != PullFeedAccountData::DISCRIMINATOR {
+    if data[..8] != *PullFeedAccountData::DISCRIMINATOR {
         return err!(MarginfiError::SwitchboardInvalidAccount);
     }
 
