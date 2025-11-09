@@ -10,7 +10,7 @@ use crate::{
 };
 use anchor_lang::prelude::borsh;
 use anchor_lang::prelude::*;
-use borsh::BorshDeserialize;
+use solana_program::borsh1::try_from_slice_unchecked;
 use solana_stake_program::stake_state::StakeStateV2;
 use anchor_spl::token::Mint;
 use bytemuck::{Pod, Zeroable};
@@ -199,8 +199,7 @@ impl OraclePriceFeedAdapter {
 
                 let lst_mint = Account::<'info, Mint>::try_from(&ais[1]).unwrap();
                 let lst_supply = lst_mint.supply;
-                let data = ais[2].data.borrow();
-                let stake_state = StakeStateV2::try_from(&data[..])?;
+                let stake_state = try_from_slice_unchecked::<StakeStateV2>(&ais[2].data.borrow())?;
                 let (_, stake) = match stake_state {
                     StakeStateV2::Stake(meta, stake, _) => (meta, stake),
                     _ => panic!("unsupported stake state"), // TODO emit more specific error
