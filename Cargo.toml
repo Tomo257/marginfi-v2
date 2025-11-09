@@ -35,9 +35,9 @@ spl-token-2022 = { version = "10.0.0", features = ["no-entrypoint"] }
 spl-transfer-hook-interface = "0.9.0"
 spl-tlv-account-resolution = "0.9.0"
 
-anchor-lang = { version = "0.31.1" }
-anchor-spl = { version = "0.31.1", features = ["token_2022"] }
-anchor-client = { version = "0.31.1" }
+anchor-lang = { version = "0.32.1" }
+anchor-spl = { version = "0.32.1", features = ["token_2022"] }
+anchor-client = { version = "0.32.1" }
 
 fixtures = { path = "test-utils", package = "test-utilities" }
 marginfi = { path = "programs/marginfi", package = "marginfi" }
