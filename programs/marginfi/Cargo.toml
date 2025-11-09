@@ -35,6 +35,7 @@ pyth-solana-receiver-sdk = { workspace = true }
 # switchboard-solana = { workspace = true }
 switchboard-on-demand = { workspace = true }
 solana-stake-program = { workspace = true }
+solana-borsh = { workspace = true }
 
 borsh = { workspace = true }
 bytemuck = { workspace = true }
