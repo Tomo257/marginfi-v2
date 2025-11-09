@@ -36,6 +36,7 @@ pyth-solana-receiver-sdk = { workspace = true }
 switchboard-on-demand = { workspace = true }
 solana-stake-program = { workspace = true }
 solana-borsh = { workspace = true }
+solana-stake-interface010 = { package = "solana-stake-interface", version = "1.2.1" }
 
 borsh = { workspace = true }
 bytemuck = { workspace = true }

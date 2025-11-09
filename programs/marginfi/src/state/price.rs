@@ -11,7 +11,7 @@ use crate::{
 use anchor_lang::prelude::borsh;
 use anchor_lang::prelude::*;
 use switchboard_on_demand::solana_program::borsh0_10::try_from_slice_unchecked;
-use solana_stake_program::stake_state::StakeStateV2;
+use solana_stake_interface010::state::StakeStateV2;
 use anchor_spl::token::Mint;
 use bytemuck::{Pod, Zeroable};
 use enum_dispatch::enum_dispatch;
