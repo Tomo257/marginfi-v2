@@ -34,6 +34,7 @@ anchor-spl = { workspace = true }
 pyth-solana-receiver-sdk = { workspace = true }
 # switchboard-solana = { workspace = true }
 switchboard-on-demand = { workspace = true }
+solana-stake-program = { workspace = true }
 
 borsh = { workspace = true }
 bytemuck = { workspace = true }
